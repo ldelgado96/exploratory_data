@@ -12,7 +12,7 @@ let tooltip;
 * APPLICATION STATE
 * */
 let state = {
- // + INITIALIZE STATE
+ data:null
 };
 
 /**
@@ -77,11 +77,11 @@ function init() {
   console.log(node)
 
 
- const leaves = d3.pack.descendants()
+ //const leafGroup= node
 
-  // + CREATE YOUR GRAPHICAL ELEMENTS
+ /** // + CREATE YOUR GRAPHICAL ELEMENTS
   const leafGroup = svg.selectAll("g")
-      .data(leaves)
+      .data(root)
       .join("g")
       .attr("transform", d => `translate(${d.x},${d.y})`)
   
@@ -103,7 +103,7 @@ function init() {
       //  state.hover = null
       //  draw();
       //})
-
+**/
   draw(); // calls the draw function
 
     }
